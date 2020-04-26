@@ -18,10 +18,7 @@ export class OkService {
   };
 
   constructor(private http: HttpClient) {}
-
-  getRootNote(): Observable<Car> {
-    return this.http.get<Car>(`${this.url}/api`)
-  } 
+ 
 
   getAllCars(): Observable<Car[]> {
     return this.http.get<Car[]>(`${this.url}/api/read`) 
